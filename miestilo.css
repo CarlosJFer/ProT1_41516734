@@ -4,4 +4,9 @@ body {
     font-family: Georgia, sans-serif;
     margin: 0;
     padding: 0;
-    }    
+    }
+.centrado-negrita-cursivo{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
