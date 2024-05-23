@@ -5,8 +5,22 @@ body {
     margin: 0;
     padding: 0;
     }
-.centrado-negrita-cursivo{
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
+
+.centrado-negrita-cursivo-primer-parrafo { /* Parrafo de la linea 16 */
+    text-align: center; /* Para centrar texto */
+    font-weight: bold; /* Para darle una fuente negrita */
+    font-style: impact; /* Estilo de fuente */
+}
+
+.informacion-destacada { /*Parrafo de la linea 21*/
+    background-color: #ccc; /* Color de fondo gris claro */
+    padding: 20px; /* Espacio interno alrededor del parrafo */
+    border: 1px solid #ccc; /* Borde alrededor de la división con color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 20px; /* Espacio externo alrededor de la division */
+}
+
+.centrado-negrita-cursivo-segundo-parrafo { /* Parrafo de la linea 16 */
+    text-align: center; /* Para centrar texto */
+    font-style: tahoma; /* Estilo de fuente */
 }
