@@ -6,30 +6,89 @@ body {/*
     padding: 0;
     */}
 header {
-        background-color: #69bd45;
-        color: #fff;
+        background-color: #001F3F;
+        color: #0074D9;
         text-align: center;
         padding: 20px;
         }
-        section {
-        padding: 20px; /* espaciado para la sección de 20 pixeles */}
-        footer {
-            background-color: #4caf50; /* Color de fondo del footer */
-            color: #fff;
-            padding: 20px 0; }
-            .footer-content {
-            max-width: 800px; /* Ancho máximo del contenido del footer */
-            margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
-            text-align: center; }
+        h1 {
+            /* Estilos para H1 */
+            -webkit-text-stroke: 0.3px black;
+            color: #FFFFFF; /* Color del texto */
+            font-size: 60px; /* Tamaño de la fuente */
+            font-weight: bold; /* Grosor de la fuente */
+            text-align: center; /* Alineación del texto */
+            font-style: Georgia /* Estilo de fuente */
+        }
+        h2 {
+            /* Estilos para H1 */
+            -webkit-text-stroke: 0.3px black;
+            color: #FFFFFF; /* Color del texto */
+            font-size: 20px; /* Tamaño de la fuente */
+            text-align: center; /* Alineación del texto */
+            font-style: Georgia /* Estilo de fuente */
+        }
+/* Estilos para las imágenes */
+img {
+    display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border: 0.5px solid #ffffff; /* Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
+    border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
+    }
+
+/* Estilos para el nav y enlaces de ul y li */
+
+nav {
+        background-color: #001F3F;
+        padding: 10px;
+        text-align: center;
+    }
+
+nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+nav ul li {
+            display: inline;
+            margin-right: 20px;
+    }
+
+nav ul li a {
+                color: #FFFFFF;
+                text-decoration: none;
+                padding: 8px 16px;
+                border-radius: 5px;
+    }
+
+nav ul li a:hover {
+                    background-color: #0074D9;
+    }
+
+section {
+            padding: 20px; /* espaciado para la sección de 20 pixeles */}
+
+footer {
+        background-color: #001F3F; /* Color de fondo del footer */
+        color: #AAAAAA;
+        padding: 20px 0; }
+
+.footer-content {
+                    max-width: 800px; /* Ancho máximo del contenido del footer */
+                    margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+                    text-align: center; }
 
 .centrado-negrita-cursivo-primer-parrafo { /* Parrafo de la linea 16 */
     text-align: center; /* Para centrar texto */
     font-weight: bold; /* Para darle una fuente negrita */
     font-style: impact; /* Estilo de fuente */
+    -webkit-text-stroke: 0.3px black;
 }
 
 .informacion-destacada { /*Parrafo de la linea 21*/
-    background-color: #ccc; /* Color de fondo gris claro */
+    background-color: #003366; /* Color de fondo gris claro */
     padding: 20px; /* Espacio interno alrededor del parrafo */
     border: 1px solid #ccc; /* Borde alrededor de la división con color gris claro */
     border-radius: 5px; /* Bordes redondeados */
@@ -39,4 +98,5 @@ header {
 .centrado-negrita-cursivo-segundo-parrafo { /* Parrafo de la linea 16 */
     text-align: center; /* Para centrar texto */
     font-style: tahoma; /* Estilo de fuente */
+    -webkit-text-stroke: 0.3px black;
 }
