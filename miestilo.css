@@ -5,86 +5,85 @@ body {/*
     margin: 0;
     padding: 0;
     */}
-header {
-        background-color: #001F3F;
-        color: #0074D9;
-        text-align: center;
-        padding: 20px;
-        }
-        h1 {
-            /* Estilos para H1 */
-            -webkit-text-stroke: 0.3px black;
-            color: #FFFFFF; /* Color del texto */
-            font-size: 60px; /* Tamaño de la fuente */
-            font-weight: bold; /* Grosor de la fuente */
-            text-align: center; /* Alineación del texto */
-            font-style: Georgia /* Estilo de fuente */
-        }
-        h2 {
-            /* Estilos para H1 */
-            -webkit-text-stroke: 0.3px black;
-            color: #FFFFFF; /* Color del texto */
-            font-size: 20px; /* Tamaño de la fuente */
-            text-align: center; /* Alineación del texto */
-            font-style: Georgia /* Estilo de fuente */
-        }
-/* Estilos para las imágenes */
+
+    /* Estilos para las imágenes */
 img {
     display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
     margin: 0 auto; /* Centrar las imágenes horizontalmente */
     max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
-    border: 0.5px solid #ffffff; /* Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
     border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
     }
+
+header {
+    background-color: #001F3F;
+    color: #0074D9;
+    text-align: center;
+    padding: 20px;
+        }
+
+/* Estilos para H1 */
+h1 {
+    -webkit-text-stroke: 0.3px black;
+    color: #FFFFFF; /* Color del texto */
+    font-size: 60px; /* Tamaño de la fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    text-align: center; /* Alineación del texto */
+    font-style: Montserrat-SemiBold /* Estilo de fuente */
+}
+
+/* Estilos para H2 */
+h2 {
+    -webkit-text-stroke: 0.3px black;
+    color: #FFFFFF; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto */
+    font-style: Montserrat-SemiBold /* Estilo de fuente */
+}
 
 /* Estilos para el nav y enlaces de ul y li */
 
 nav {
-        background-color: #001F3F;
-        padding: 10px;
-        text-align: center;
+    background-color: #0074D9;
+    padding: 10px 0;
+    width: 100%;
     }
 
 nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     }
 
 nav ul li {
-            display: inline;
-            margin-right: 20px;
+    margin-right: 20px;
     }
 
 nav ul li a {
-                color: #FFFFFF;
-                text-decoration: none;
-                padding: 8px 16px;
-                border-radius: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
     }
 
 nav ul li a:hover {
-                    background-color: #0074D9;
+    background-color: #001F3F;
+    color: #9b9b9b; /* Dorado */
     }
 
-section {
-            padding: 20px; /* espaciado para la sección de 20 pixeles */}
-
 footer {
-        background-color: #001F3F; /* Color de fondo del footer */
-        color: #AAAAAA;
-        padding: 20px 0; }
+    background-color: #001F3F; /* Color de fondo del footer */
+    color: #AAAAAA;
+    padding: 20px 0;
+}
 
-.footer-content {
-                    max-width: 800px; /* Ancho máximo del contenido del footer */
-                    margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
-                    text-align: center; }
-
-.centrado-negrita-cursivo-primer-parrafo { /* Parrafo de la linea 16 */
-    text-align: center; /* Para centrar texto */
-    font-weight: bold; /* Para darle una fuente negrita */
-    font-style: impact; /* Estilo de fuente */
-    -webkit-text-stroke: 0.3px black;
+section.contenido{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .informacion-destacada { /*Parrafo de la linea 21*/
@@ -93,10 +92,76 @@ footer {
     border: 1px solid #ccc; /* Borde alrededor de la división con color gris claro */
     border-radius: 5px; /* Bordes redondeados */
     margin: 20px; /* Espacio externo alrededor de la division */
+    width: 500px; /*Para reducir el espacio*/
+    text-align: justify;
+}
+
+/* Estilo del slider */
+.slider {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenedor de las imágenes del slider */
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+/* Ocultar el estilo de lista */
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* Keyframes para la animación del slider */
+@keyframes slide {
+    0%, 20% {margin-left: 0%;}
+    25%, 45% {margin-left: -100%;}
+    50%, 70% {margin-left: -200%;}
+    75%, 95% {margin-left: -300%;}
+}
+
+.footer-content {
+width: 100%; /* Ancho máximo del contenido del footer */
+text-align: center;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin: 0 10px; /* Esto es el espaciado entre los logos */
+}
+
+.footer-content ul li a img {
+    width: 40px; /* Esto es el tamaño del logo */
+    height: 40px; /* Esto es para mantener la proporción */
+    object-fit: contain;
+}
+
+.centrado-negrita-cursivo-primer-parrafo { /* Parrafo de la linea 16 */
+    text-align: center; /* Para centrar texto */
+    font-weight: bold; /* Para darle una fuente negrita */
+    font-style: impact, sans-serif; /* Estilo de fuente */
+    -webkit-text-stroke: 0.3px black;
 }
 
 .centrado-negrita-cursivo-segundo-parrafo { /* Parrafo de la linea 16 */
     text-align: center; /* Para centrar texto */
-    font-style: tahoma; /* Estilo de fuente */
+    font-style: tahoma, sans-serif; /* Estilo de fuente */
     -webkit-text-stroke: 0.3px black;
 }
